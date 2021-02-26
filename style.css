@@ -1,0 +1,500 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Noto Serif JP', sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1.6rem;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+.l-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.s-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+.sp {
+  display: none;
+}
+
+/* header */
+.header {
+  padding: 1.5rem;
+}
+.h_container {
+  display: flex;
+  justify-content: space-between;
+}
+.h_left {
+  display: flex;
+  align-items: center;
+}
+.h_left .logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+.h_left .name {
+  line-height: 1.5;
+}
+.h_left .company-name {
+  font-size: 3rem;
+}
+.h_right .menu {
+  margin-bottom: 1rem;
+}
+.h_right ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.h_right li {
+  padding: .5rem 1.5rem;
+  border-right: 2px solid #185A98;
+}
+.h_right .pd {
+  padding-right: 0;
+}
+.h_right .bd {
+  border: none;
+}
+.h_right .contact {
+  display: flex;
+  justify-content: space-between;
+}
+.h_right .tel-box {
+  display: flex;
+  margin-right: 3rem;
+  align-items: center;
+}
+.h_right svg {
+  display: inline-block;
+  width: 2rem;
+  height: 100%;
+}
+.h_right .number {
+  font-size: 2.5rem;
+}
+.h_right .ct-box {
+  display: flex;
+  align-items: center;
+}
+.h_right .ct-box svg {
+  margin-right: 2rem;
+}
+.h_right .ct-txt {
+  padding: .5rem 0 .5rem 1.8rem;
+  border-left: 2px solid #185A98;
+}
+.h_g-nav {
+  background: #185A98;
+}
+.h_g-nav ul {
+  display: flex;
+  justify-content: center;
+}
+.h_g-nav li {
+  padding: 1.5rem 5rem;
+  border-right: 1px solid #fff;
+}
+.h_g-nav .bd {
+  border: none;
+}
+.h_g-nav li a {
+  color: #fff;
+}
+
+/* main */
+.main {
+  background: #f9f9f9;
+}
+.ky {
+  position: relative;
+  margin-bottom: 5rem;
+}
+.ky .catch-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem;
+  background: rgba(255, 255, 255, 0.7);
+  text-shadow:1px 1px 0 #fff,-1px 1px 0 #fff,1px -1px 0 #fff,-1px -1px 0 #fff;
+  white-space: nowrap;
+}
+.ky .catch-box .txt {
+  color: #185A98;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.ky .catch-box .greeting {
+  position: relative;
+  margin-bottom: .5rem;
+}
+.ky .catch-box .greeting::before {
+  position: absolute;
+  top: 1rem;
+  left: -1.3rem;
+  content: '';
+  display: block;
+  width: 3rem;
+  height: .2rem;
+  background: #185A98;
+  transform: rotate(45deg);
+}
+.ky .catch-box .greeting::after {
+  position: absolute;
+  top: 1rem;
+  right: -1rem;
+  content: '';
+  display: block;
+  width: 3rem;
+  height: .2rem;
+  background: #185A98;
+  transform: rotate(-45deg);
+}
+.ky .catch-box .ttl {
+  position: relative;
+  font-size: 4.5rem;
+  line-height: 1.3;
+}
+.m-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* article */
+.article {
+  width: 70%;
+}
+section {
+  margin-bottom: 5rem;
+}
+/* -- reason -- */
+h2 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+h2::before {
+  content: '';
+  margin-right: 2rem;
+  border: 2px solid #185A98;
+}
+.reason figure {
+  margin-right: 2rem;
+}
+.reason figure img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  object-position: left;
+}
+.reason .ttl {
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.reason .content {
+  line-height: 1.5;
+}
+/* -- new -- */
+.new table {
+  width: 100%;
+  margin-left: .5rem;
+}
+.new tr {
+  border-bottom: 1px solid #dedede;
+}
+.new td {
+  display: inline-block;
+  margin-right: 5rem;
+  padding: 1.5rem 0 .5rem 0;
+}
+/* -- case -- */
+.case .contents {
+  flex-wrap: wrap;
+}
+.case .item-box {
+  width: 32%;
+}
+.case figure {
+  margin-bottom: 1rem;
+}
+.case .ttl {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+.case .link {
+  margin-bottom: 5rem;
+  background: #185A98;
+}
+.case .link a {
+  position: relative;
+  display: block;
+  padding: 2rem 3rem;
+  color: #fff;
+}
+.case .link a::before {
+  content: '';
+  position: absolute;
+  top: 2.2rem;
+  right: 1.5rem;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+
+/*  -- mouth --*/
+.mouth .contents {
+  padding: 3rem 0;
+  border-bottom: 1px solid #dedede;
+}
+.mouth figure img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  object-position: center;
+}
+/* -- ky_contact -- */
+.ky_contact {
+  background: #185A98;
+  color: #fff;
+  border-radius: 1rem;
+}
+.ky_contact .content {
+  width: 60%;
+  padding: 3rem 4rem;
+  text-align: center;
+}
+.ky_contact .ttl {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: .5rem 3rem;
+  border: 1px solid #fff;
+}
+.ky_contact .txt {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.ky_contact .ct-us {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.ky_contact .ct-us .tx {
+  padding: 0 2rem;
+}
+.ky_contact .ct-us .bl,
+.ky_contact .ct-us .br {
+  position: relative;
+  top: 7px;
+  width: 30%;
+  height: 1px;
+  background: #fff;
+}
+.ky_contact .ct-box a {
+  justify-content: center;
+  padding: 1rem 0;
+  color: #185A98;
+  align-items: center;
+  border-left: 10px solid #dedede;
+  border-right: 10px solid #dedede;
+}
+.ky_contact .ct-box svg {
+  width: 3rem;
+  margin-right: .5rem;
+}
+.ky_contact .ct-box span {
+  font-size: 2rem;
+}
+.ky_contact .ct-box .left {
+  width: 48%;
+  background: #fff;
+}
+.ky_contact .ct-box .right {
+  width: 48%;
+  background: #fff;
+}
+.ky_contact .operator {
+  width: 20rem;
+  margin: 0 auto;
+}
+.ky_contact .bt-txt {
+  justify-content: initial;
+  padding: 2rem 4rem;
+  background: rgba(255, 255, 255, 0.7);
+  color: #185A98;
+  align-items: center;
+}
+.ky_contact .bt-txt .txt {
+  margin-right: 5rem;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+.ky_contact .bt-txt .number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* aside */
+.aside {
+  width: 25%;
+}
+/* -- menu -- */
+.aside .menu {
+  margin-bottom: 1rem;
+}
+.aside .menu li a {
+  display: block;
+  padding: 1.5rem 2rem;
+  background: #185A98;
+  color: #fff;
+  border: 1px solid #ddd;
+}
+.aside .menu li a::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+/* -- logo -- */
+.aside .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 4rem 2rem;
+  color: #185A98;
+  border: 1px solid #185A98;
+}
+.aside figure {
+  width: 20%;
+}
+.aside .company p {
+  line-height: 1.5;
+}
+.aside .company .name {
+  font-size: 3rem;
+}
+/* -- new-article -- */
+.aside .new-article h2 {
+  font-size: 1.5rem;
+}
+.aside .new-article h2::before {
+  display: none;
+}
+.aside .new-article .contents {
+  justify-content: flex-start;
+  padding: 2rem 0;
+  border-top: 2px solid #dedede;
+}
+.aside .new-article .contents figure {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 1.5rem;
+}
+
+/* footer */
+.footer {
+  padding: 5rem;
+  background: #185A98;
+  color: #fff;
+}
+.footer .contents {
+  justify-content: start;
+  margin-bottom: 5rem;
+}
+/* -- left -- */
+.footer .left {
+  width: 40%;
+  margin-right: 5rem;
+}
+.footer .left .chach {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+.footer .left .tel a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+.footer .left .tel svg {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.footer .left .tel span {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+.footer .left .mail a {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  color: #fff;
+}
+.footer .left .mail svg {
+  width: 2rem;
+  margin-right: 2rem;
+}
+.footer .left .mail span {
+  padding-left: 2rem;
+  border-left: 1px solid #fff;
+}
+/* right */
+.footer .right {
+  width: 60%;
+}
+.footer .right ul {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+.footer .right li {
+  padding: .5rem 2rem;
+  font-size: 1.4rem;
+  border-right: 1px solid #fff;
+}
+.footer .right li a {
+  color: #fff;
+}
+.footer .right .pd {
+  padding-left: 0;
+}
+.footer .right .bd {
+  border: none;
+}
+.footer .txt {
+  line-height: 1.5;
+}
+/* -- copy-right--  */
+.footer .copy-right {
+  text-align: center;
+}
